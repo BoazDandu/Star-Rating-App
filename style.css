@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: yellow;
+}
+
+.container {
+    background-color: #fff;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, .3);
+}
+
+.emojis {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    top: 20%;
+    height: 50px;
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.face-emojis {
+    margin: 1px;
+    transform: translateX(0);
+    transition: transform 0.2s;
+}
+
+
+.stars {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    color: lightgray;
+}
+
+.fa-star {
+    cursor: pointer;
+}
+
+
+.fa-star.active {
+    color: gold;
+}
+
+#alertBox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#alert-close {
+    position: absolute;
+    right: -10%;
+    top: -18%;
+    cursor: pointer;
+}
+
+
+.alert-text {
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+}
+
+.my-btn{
+    outline: none;
+    background-color: lightgreen;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: ease-in-out .2s;
+}
+
+.my-btn:hover {
+    cursor: pointer;
+    background-color: #5fee5f;
+}
+
+

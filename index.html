@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Rating App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="emojis">
+            <i class="fa-regular face-emojis fa-face-angry fa-3x"></i>
+            <i class="fa-regular face-emojis fa-face-frown fa-3x"></i>
+            <i class="fa-regular face-emojis fa-face-meh fa-3x"></i>
+            <i class="fa-regular face-emojis fa-face-grin fa-3x"></i>
+            <i class="fa-regular face-emojis fa-face-grin-beam fa-3x"></i>
+        </div>
+        <div class="stars">
+            <i class="fa-solid fa-star active fa-2x"></i>
+            <i class="fa-solid fa-star fa-2x"></i>
+            <i class="fa-solid fa-star fa-2x"></i>
+            <i class="fa-solid fa-star fa-2x"></i>
+            <i class="fa-solid fa-star fa-2x"></i>
+        </div>
+        <div id="alertBox">
+            <i style="color: green;" class="fa-regular fa-face-grin-beam fa-2x"></i>
+            <p class="alert-text">Thank you for rating!!!</p>
+            <span id="alert-close">&#10005;</span>
+            <button type="submit" class="my-btn">Submit</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
